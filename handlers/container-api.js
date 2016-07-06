@@ -4,7 +4,7 @@
 import store from "../store/store"
 import {showEditorAction,showPreviewAction} from "../actions/container-actions";
 
-console.log("container-api里的store：==》",store);
+// console.log("container-api.js里的store：==》",store);
 export function showEditor() {
     store.dispatch(showEditorAction());
 }

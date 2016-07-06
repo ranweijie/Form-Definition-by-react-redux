@@ -22,7 +22,7 @@ class MainContainer extends Component{
     render(){
         var currentStatus = this.props.status.status;
         var self = this;
-        console.log("MainContainer.js当前状态：==》",currentStatus);
+        // console.log("MainContainer.js当前状态：==》",currentStatus);
         return(<div>
              {(function () {
                 if(currentStatus === "edit"){

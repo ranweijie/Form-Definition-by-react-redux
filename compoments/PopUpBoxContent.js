@@ -16,10 +16,8 @@ class PopUpBoxContent extends Component{
         document.getElementById("pop-up").innerHTML = "";
     }
     addItem(){
-        // alert(123);
-        // console.log(1111111111111111111111111111);
         var addItemType = $('input[name="add-item"]:checked').val();
-        console.log("添加item类型：",addItemType);
+        // console.log("PopUpBoxContent.js==>添加item类型：",addItemType);
         if(!addItemType){
             alert("您还没有选择要添加的item类型");
             return false;
@@ -27,7 +25,7 @@ class PopUpBoxContent extends Component{
         var addItemId = parseInt((new Date()).getTime());
         var addItemText = addItemType == "text" ? "我是文本"+addItemId :"我是日期"+addItemId;
         var addItem = {"type":addItemType,"index":addItemId,"text":addItemText};
-        console.log("添加item：",addItem);
+        // console.log("PopUpBoxContent.js==>添加item：",addItem);
         FormAPI.addItem(addItem);
         // closePopUpBox();
     }

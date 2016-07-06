@@ -25,7 +25,7 @@ class FormEditor extends Component{
         )
     }
     removeItem(index){
-        console.log("remove item index:",index);
+        // console.log("FormEditor.js ==> remove item index:",index);
         FormAPI.removeItem(index)
     }
     render(){

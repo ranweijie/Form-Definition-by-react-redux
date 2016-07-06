@@ -6,6 +6,5 @@ import {createStore} from "redux"
 
 var store = createStore(reducers);
 
-console.log("store.js中的store：==>",store);
-
+// console.log("store.js中的store：==>",store);
 export default store;

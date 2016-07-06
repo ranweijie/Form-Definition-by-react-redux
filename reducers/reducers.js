@@ -14,26 +14,6 @@ var initItems = {
     items:[]
 };
 
-var initFrontItems = {
-    items:[33,44]
-};
-
-console.log("old initFrontItems:==>",initFrontItems.items);
-
-function getServerFormData(callback) {
-    $.get("/getFormItems",function(data,status){
-        console.log("serverDate11:==>",data);
-        callback(data)
-    });
-}
-
-function changeArr(data) {
-    // initFrontItems.items.concat(data.items);
-    initFrontItems.items = data.items;
-    console.log("new initFrontItems:==>",initFrontItems.items);
-}
-
-getServerFormData(changeArr);
 
 function containerReducer(state = initStatus,action) {
 
@@ -70,6 +50,6 @@ var reducers = combineReducers({
     }
 );
 
-console.log("reducers.js中的reducers：==>",reducers);
+// console.log("reducers.js中的reducers：==>",reducers);
 
 export default reducers;
